@@ -1,0 +1,19 @@
+<div th:replace="admin/shared/header"></div>
+
+<h1>Suppliers</h1>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    
+    <tr th:each="record:${records}">
+        <td th:text="${record.id}"></td>
+        <td th:text="${record.name}"></td>
+        
+    </tr>
+</table>
+
+
+<div th:replace="admin/shared/footer"></div>

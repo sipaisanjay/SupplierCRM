@@ -5,10 +5,16 @@
  */
 package com.cibt.crmapp.controller.core;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 /**
  *
  * @author Sanjay07
  */
 public abstract class SiteController {
+    
+    protected String viewPath="";
+    protected String header="";
+    
     
 }
